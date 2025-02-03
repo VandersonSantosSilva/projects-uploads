@@ -1,0 +1,98 @@
+:root{
+ --color01: #000000;
+ --color02: #ffffff;
+ --color03: #ff7c01;
+}
+
+.Projects{
+    background-color: var(--color02);
+    width: 100vw!important;  
+    height: 100vh!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+
+.ContainerForm{
+    background-color: var(--color01);
+    border: solid 1px var(--color03);
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    z-index: 1;
+    animation: rgb 5s linear infinite;
+}
+
+h1{
+    color: var(--color02);
+    text-transform: uppercase;
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border: solid 1px var(--color03);
+}
+
+input:focus{
+    color:  var(--color03);
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+textarea{
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border: solid 1px var(--color03);
+}
+
+button{
+    width: 30%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@keyframes rgb {
+    0%{
+        border: solid 1px  red;
+        box-shadow: 5px 5px 30px red;
+        transition: 1s;
+    }50%{
+        border: solid 1px  green;
+        box-shadow: 5px 5px 30px green;
+        transition: 1s;
+    }100%{
+        border: solid 1px blue;
+        box-shadow: 5px 5px 30px blue;
+        transition: 1s;
+    }
+}
+
+
+@media screen and (max-width: 999px) {
+    .ContainerForm{
+        width: 90%;
+    }
+}
