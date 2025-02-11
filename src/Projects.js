@@ -23,6 +23,7 @@ function Projects() {
   const video = useRef(null)
   const techs = useRef(null)
   const descricao = useRef(null)
+  const site = useRef(null)
 
   async function ProjectsUpload(){
     try {
@@ -32,6 +33,7 @@ function Projects() {
           Nome: name.current.value,
           Imagee: imagem.current.value,
           Video: video.current.value,
+          Site: site.current.value,
           Techs: techs.current.value,
           Descricao: descricao.current.value
       }
@@ -56,6 +58,7 @@ function Projects() {
         <input ref={name} type='text' placeholder='Digite o Nome do Projeto'></input>
         <input ref={imagem} type='text' placeholder='Cole o link da imagem'></input>
         <input ref={video} type='text' placeholder='Cole o link do Vídeo'></input>
+        <input ref={site} type='text' placeholder='Cole o link do site'></input>
         <input ref={techs} type='text' placeholder='Digite as techs utilizadas'></input>
         <textarea ref={descricao} placeholder='Descreva o projeto'></textarea>
         <button onClick={ProjectsUpload}>Enviar</button>
