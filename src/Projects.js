@@ -24,6 +24,8 @@ function Projects() {
   const techs = useRef(null)
   const descricao = useRef(null)
   const site = useRef(null)
+  const Github = useRef(null)
+  const Linkedin = useRef(null)
 
   async function ProjectsUpload(){
     try {
@@ -34,6 +36,8 @@ function Projects() {
           Imagee: imagem.current.value,
           Video: video.current.value,
           Site: site.current.value,
+          Github: Github.current.value,
+          Linkedin: Linkedin.current.value,
           Techs: techs.current.value,
           Descricao: descricao.current.value
       }
@@ -43,6 +47,9 @@ function Projects() {
       name.current.value = "";
       imagem.current.value = "";
       video.current.value = "";
+      site.current.value = "";
+      Github.current.value = "";
+      Linkedin.current.value = ""
       techs.current.value = "";
       descricao.current.value = "";
 
@@ -59,6 +66,8 @@ function Projects() {
         <input ref={imagem} type='text' placeholder='Cole o link da imagem'></input>
         <input ref={video} type='text' placeholder='Cole o link do Vídeo'></input>
         <input ref={site} type='text' placeholder='Cole o link do site'></input>
+        <input ref={site} type='text' placeholder='Cole o link do projeto no Github'></input>
+        <input ref={site} type='text' placeholder='Cole o link do projeto no LinkeDin'></input>
         <input ref={techs} type='text' placeholder='Digite as techs utilizadas'></input>
         <textarea ref={descricao} placeholder='Descreva o projeto'></textarea>
         <button onClick={ProjectsUpload}>Enviar</button>
