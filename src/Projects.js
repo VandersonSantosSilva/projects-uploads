@@ -66,8 +66,8 @@ function Projects() {
         <input ref={imagem} type='text' placeholder='Cole o link da imagem'></input>
         <input ref={video} type='text' placeholder='Cole o link do Vídeo'></input>
         <input ref={site} type='text' placeholder='Cole o link do site'></input>
-        <input ref={site} type='text' placeholder='Cole o link do projeto no Github'></input>
-        <input ref={site} type='text' placeholder='Cole o link do projeto no LinkeDin'></input>
+        <input ref={Github} type='text' placeholder='Cole o link do projeto no Github'></input>
+        <input ref={Linkedin} type='text' placeholder='Cole o link do projeto no LinkeDin'></input>
         <input ref={techs} type='text' placeholder='Digite as techs utilizadas'></input>
         <textarea ref={descricao} placeholder='Descreva o projeto'></textarea>
         <button onClick={ProjectsUpload}>Enviar</button>
